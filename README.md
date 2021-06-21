@@ -9,9 +9,11 @@ In order to test it properly you need to:
 
 2 - Deploy to firebase hosting and deploy functions
 
-3 - Add firebase hosting URL inside recaptcha admin page
+3 - Create a model inside the realtime database with key "test" and value "Lorem ipsum"
 
-4 - Enforce appcheck inside firebase console
+4 - Add firebase hosting URL inside recaptcha admin page
+
+5 - Enforce appcheck inside firebase console
 
 After opening the page you should see a message inside functions logs:
 
