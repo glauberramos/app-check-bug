@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app-check.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-functions.js"></script>
+
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyC6EY3cYnaRgF_avxI3wXsv76mysy5Deds",
+                authDomain: "app-check-test-91a3b.firebaseapp.com",
+                projectId: "app-check-test-91a3b",
+                storageBucket: "app-check-test-91a3b.appspot.com",
+                messagingSenderId: "1044207766263",
+                appId: "1:1044207766263:web:00e8f9107e03eb1425a1f2"
+            };
+
+            firebase.initializeApp(firebaseConfig);
+
+            window.addEventListener('DOMContentLoaded', () => {
+                var appCheck = firebase.appCheck()
+                appCheck.activate('6LeM-w4bAAAAAODgio2JzaRzHBQYgHqbwBvikUUS')
+
+                firebase.functions().httpsCallable('helloWorld')()
+            })
+        </script>
+    </head>
+    <body>
+        Home
+    </body>
+</html>
