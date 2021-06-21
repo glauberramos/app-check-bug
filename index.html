@@ -21,7 +21,9 @@
                 var appCheck = firebase.appCheck()
                 appCheck.activate('6LeM-w4bAAAAAODgio2JzaRzHBQYgHqbwBvikUUS')
 
-                firebase.functions().httpsCallable('helloWorld')()
+                firebase.functions().httpsCallable('helloWorld')().then(value => {
+                    console.log(value.data)
+                })
             })
         </script>
     </head>
